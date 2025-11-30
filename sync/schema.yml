@@ -1,0 +1,64 @@
+openapi: 3.0.3
+info:
+  title: Sync Activity API
+  version: 1.0.0
+  description: This project is the backend for the mobile application, design to connect
+    people through sports
+paths:
+  /:
+    get:
+      operationId: root_retrieve
+      security:
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/callback/:
+    get:
+      operationId: api_callback_retrieve
+      tags:
+      - api
+      security:
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/login/:
+    get:
+      operationId: api_login_retrieve
+      tags:
+      - api
+      security:
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/logout/:
+    get:
+      operationId: api_logout_retrieve
+      tags:
+      - api
+      security:
+      - {}
+      responses:
+        '200':
+          description: No response body
+  /api/profile/:
+    get:
+      operationId: api_profile_retrieve
+      tags:
+      - api
+      responses:
+        '200':
+          description: No response body
+  /api/register/:
+    post:
+      operationId: api_register_create
+      tags:
+      - api
+      security:
+      - {}
+      responses:
+        '200':
+          description: No response body
+components: {}
